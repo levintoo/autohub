@@ -6,7 +6,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import {AlignRight, ChevronDown} from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
     <header className="py-6 px-3 md:px-0 container mx-auto">
       <nav className="flex justify-between items-center">
         <Link href="/">
-          <img className="size-10" src="/icon.png" alt="icon" />
+          <img className="size-8 md:size-10" src="/icon.png" alt="icon" />
         </Link>
 
         <ul className="hidden md:flex gap-6 items-center">
@@ -35,31 +35,51 @@ export default function Header() {
                 sideOffset={4}
                 side="bottom"
               >
-                <DropdownMenuItem>Available In Kenya</DropdownMenuItem>
-                <DropdownMenuItem>International Stock</DropdownMenuItem>
-                <DropdownMenuItem>Direct Import</DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/">Available In Kenya</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/">International Stock</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/">Direct Import</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
           <li>
-            <Button variant="ghost">Bikes</Button>
+            <Button variant="ghost" asChild>
+              <Link href="/admin">Admin</Link>
+            </Button>
           </li>
           <li>
-            <Button variant="ghost">Sell Your Car</Button>
+            <Button variant="ghost" asChild>
+              <Link href="/sell-your-car">Sell Your Car</Link>
+            </Button>
           </li>
           <li>
-            <Button variant="ghost">About</Button>
+            <Button variant="ghost" asChild>
+              <Link href="/about">About</Link>
+            </Button>
           </li>
           <li>
-            <Button variant="ghost">Contact</Button>
+            <Button variant="ghost" asChild>
+              <Link href="/contact">Contact</Link>
+            </Button>
           </li>
           <li>
-            <Button variant="ghost">FAQ</Button>
+            <Button variant="ghost" asChild>
+              <Link href="/faq">FAQ</Link>
+            </Button>
           </li>
           <li>
             <ModeToggle />
           </li>
         </ul>
+
+        <Button className="md:hidden" variant="outline" size="icon">
+          <AlignRight />
+        </Button>
       </nav>
     </header>
   );

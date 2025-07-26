@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import AnnouncementBanner from "@/components/announcement-banner";
 
 const outfitSans = Outfit({
   variable: "--font-outfit-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
+          <AnnouncementBanner />
           {children}
           <Footer />
         </ThemeProvider>

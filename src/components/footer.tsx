@@ -7,7 +7,7 @@ import { Mail, MapPin, Phone, SendHorizontal } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-slate-50 dark:bg-slate-900 border-t">
-      <div className="container mx-auto pt-16 pb-6 lg:pt-24">
+      <div className="container mx-auto px-3 lg:px-0 pt-16 pb-6 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center sm:justify-start">
