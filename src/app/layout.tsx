@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import AnnouncementBanner from "@/components/announcement-banner";
+import Script from "next/script";
 
 const outfitSans = Outfit({
   variable: "--font-outfit-sans",
@@ -35,6 +36,13 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProvider>
+        <Script
+            id="script-beam"
+            src="https://beamanalytics.b-cdn.net/beam.min.js"
+            data-token="f2e6a6bf-3f3f-4cac-9977-927d8c6eb569"
+            async
+        >
+        </Script>
       </body>
     </html>
   );
