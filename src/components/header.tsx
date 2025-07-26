@@ -6,7 +6,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import {AlignRight, ChevronDown} from "lucide-react";
+import { AlignRight, ChevronDown } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Header() {

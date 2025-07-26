@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { ChevronRight, Phone } from "lucide-react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -9,10 +6,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Twitter } from "@/components/icons/twitter";
-import { Facebook } from "@/components/icons/facebook";
-import { Instagram } from "@/components/icons/instagram";
-import { Whatsapp } from "@/components/icons/whatsapp";
 import Link from "next/link";
 
 export default async function Page() {

@@ -22,7 +22,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
 type TCars = {
   id: number;
@@ -291,9 +291,7 @@ export default async function Page({
             </div>
             <Separator />
             <div className="flex justify-between gap-3">
-              <p className="text-slate-800/80 dark:text-white/70">
-                Mileage
-              </p>
+              <p className="text-slate-800/80 dark:text-white/70">Mileage</p>
               <div className="text-slate-800/80 dark:text-white/70">
                 123,000km
               </div>
